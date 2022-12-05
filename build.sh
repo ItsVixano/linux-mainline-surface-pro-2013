@@ -30,6 +30,5 @@ sudo mkinitcpio -p linux-mainline
 
 # Add systemd-boot loader
 sudo cp "${SURFACE_LINUX_DIR}"/configs/linux-mainline.conf /boot/loader/entries/
-sudo systemctl reboot --boot-loader-entry=linux-mainline.conf
 
-echo -e "\nDone :D"
+echo -e "\nDone :D, to chose the kernel on reboot, run \n`sudo systemctl reboot --boot-loader-entry=linux-mainline.conf`\nYou can also add `default linux-mainline.conf` to choose the compiled kernel on every reboots"
