@@ -10,7 +10,7 @@ make ARCH=x86 olddefconfig
 kernelversion=$(make -s kernelversion)
 cp "${MY_DIR}"/.config "${SURFACE_LINUX_DIR}"/config
 cd "${SURFACE_LINUX_DIR}"
-git add config && git commit -m "config: Regen config for linux-mainline ${kernelversion}"
+git add config && git commit -m "config: Regen config for linux ${kernelversion}"
 cd "${MY_DIR}"
 
 # Build the kernel

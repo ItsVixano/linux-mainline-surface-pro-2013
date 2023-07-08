@@ -20,8 +20,8 @@ MAKEFLAGS="-j$(nproc)"  makepkg -s --noconfirm --skippgpcheck
 ```
 
 ### You will endup with 2 tars
-- linux-mainline-6.1-1-x86_64.pkg.tar.zst "Contains kernel images and modules"
-- linux-mainline-headers-6.1.1-x86_64.pkg.tar.zst "Contains kernel headers"
+- linux-6.1-stormbreaker-x86_64.pkg.tar.zst "Contains kernel images and modules"
+- linux-headers-6.1-stormbreaker-x86_64.pkg.tar.zst "Contains kernel headers"
 
 Use tar to extract them
 

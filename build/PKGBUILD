@@ -1,6 +1,6 @@
-pkgbase=linux-mainline
+pkgbase=linux
 pkgver=6.1
-pkgrel=1
+pkgrel=stormbreaker
 pkgdesc='Linux'
 url="https://github.com/ItsVixano/linux"
 arch=(x86_64)
