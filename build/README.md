@@ -20,8 +20,8 @@ MAKEFLAGS="-j$(nproc)"  makepkg -s --noconfirm --skippgpcheck
 ```
 
 ### You will endup with 2 tars
-- linux-6.1-stormbreaker-x86_64.pkg.tar.zst "Contains kernel images and modules"
-- linux-headers-6.1-stormbreaker-x86_64.pkg.tar.zst "Contains kernel headers"
+- linux-6.1-38-x86_64.pkg.tar.zst "Contains kernel images and modules"
+- linux-headers-6.1-38-x86_64.pkg.tar.zst "Contains kernel headers"
 
 Use tar to extract them
 
@@ -33,4 +33,10 @@ Use curl to upload the tars
 
 ```bash
 curl -T file.tar.zst https://oshi.at
+```
+
+Use mkinitcpio to install the kernel
+
+```bash
+mkinitcpio -p linux-stormbreaker
 ```

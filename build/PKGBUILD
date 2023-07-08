@@ -1,6 +1,6 @@
 pkgbase=linux
 pkgver=6.1
-pkgrel=stormbreaker
+pkgrel=38
 pkgdesc='Linux'
 url="https://github.com/ItsVixano/linux"
 arch=(x86_64)
@@ -11,7 +11,7 @@ makedepends=(
   git
 )
 options=('!strip')
-_srcname=linux-mainline
+_srcname=linux-stormbreaker
 source=(
   "$_srcname::git+https://github.com/ItsVixano/linux"
 )
