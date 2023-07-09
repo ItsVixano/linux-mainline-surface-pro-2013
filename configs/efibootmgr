@@ -1,0 +1,2 @@
+sudo efibootmgr --create --disk /dev/sda1 --label "linux stormbreaker" --loader /vmlinuz-linux-stormbreaker --unicode \
+    'initrd=\initramfs-linux-stormbreaker.img root=PARTUUID=5962443a-24eb-468a-b79a-93711eab4e1b zswap.enabled=0 rootflags=subvol=@ rw intel_pstate=no_hwp rootfstype=btrfs button.lid_init_state=open'

@@ -38,5 +38,8 @@ curl -T file.tar.zst https://oshi.at
 Use mkinitcpio to install the kernel
 
 ```bash
+# Via preset
 mkinitcpio -p linux-stormbreaker
+# Manually
+sudo mkinitcpio -k {/usr/lib/modules/}kernelname -g /boot/initramfs-linux-stormbreaker.img
 ```
