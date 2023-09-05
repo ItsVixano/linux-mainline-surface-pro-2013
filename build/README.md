@@ -41,5 +41,5 @@ Use mkinitcpio to install the kernel
 # Via preset
 mkinitcpio -p linux-stormbreaker
 # Manually
-sudo mkinitcpio -k {/usr/lib/modules/}kernelname -g /boot/initramfs-linux-stormbreaker.img
+sudo mkinitcpio -k /boot/vmlinuz-linux-stormbreaker -g /boot/initramfs-linux-stormbreaker.img --microcode /boot/intel-ucode.img
 ```
